@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+header {
+    background-color: #ebf4f6 !important;
+
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+ul {
+    list-style-type: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.featurla:hover{
+    color: rgb(44, 37, 37);
+
+}
+.z-2{
+    position: relative;
+    z-index: 2 !important;
+}
+
+
+header {
+    position: absolute;
+    // background-color: #242E4C !important;
+    background-color: #242E4C !important;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    z-index: 1000;
+}
+    .misol {
+        padding: 13px 0px;
+        margin-right: 48px;
+    }
+
+    .logo {
+        width: 30px;
+        color: black;
+
+    }
+    .kotta a {
+        padding: 8px 16px !important;
+    }
+    header li {
+        position: relative;
+    }
+    header a {
+        color: #171f38 !important;
+    }
+    .icon {
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 4px;
+        margin-right: 4.8px;
+    }
+    .span {
+        font-weight: bold;
+    }
+    header li i {
+        transition: 0.3s;
+    }
+    header li:hover i {
+        transform: rotateZ(-180deg);
+    }
+    .now {
+        background-color: #8b3169 !important;
+    }
+    .now:hover{
+        background-color: #742a58 !important;
+
+    }
+    header li:hover .inner-menu {
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+  
+    .inner-menu {
+        position: absolute;
+        border-radius: 18px !important;
+        padding: 24px;
+        top: 30px;
+        left: -50%;
+        transition: 0.3s;
+        transform: translateY(-30px);
+
+        opacity: 0;
+        width: 600px;
+        visibility: hidden;
+    }
+        .inner-menu ul {
+            margin: 0;
+            padding: 0;
+        }
+        .inner-menu a {
+            transition: 0.2s;
+        
+        }
+
+        .inner-menu a:hover {
+            color: white !important;
+background-color: #742A58;
+padding: 5px 10px;
+width: 100% !important;
+border-radius: 8px;
+            transition: 0.2s;
+           
+        }
+        .inner-menu h6 {
+font-weight: bold;        
+        }
+    
+
+
+.mobile {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 700px;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+    .mobile .inner-menu {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        background-color: white;
+        top: 0 !important;
+    }
+
+
+.home-section,
+.cards {
+    background-color: #ebf4f6 !important;
+}
+.cards {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+   .cards .share {
+        border-radius: 16px;
+   }
+        .share button {
+            transition: 0.3s;
+        }
+        .share button:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+            color: white !important;
+        }
+    
+
+.home-section {
+    padding-top: 160px !important;
+    padding-bottom: 224px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+}
+    .home-section h1 {
+        margin-bottom: 24px !important;
+    }
+    .with {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .div2 {
+        margin-top: 48px;
+    }
+       .div2 a {
+            color: #1c2540 !important;
+            transition: 0.3s;
+        }
+    
+    .game {
+        font-size: 2.5rem;
+    }
+    .div2 a:hover {
+        background-color: #1c2540 !important;
+        color: white !important;
+        transition: 0.3s;
+    }
+
+
+.p-3:hover {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 14px !important;
+    padding: 10px 20px !important;
+    border: none !important;
+}
+
+.div {
+    /* margin-left: 300px; */
+    position: absolute;
+    left: 65%;
+}
+
+.features,
+.partners,
+.customers {
+    background-color: white !important;
+}
+
+    .features .shit {
+        color: #424aa0;
+    }
+
+
+.partners a {
+    font-size: 100px;
+    line-height: 0.5;
+    color: #242e4c;
+    transition: 0.3s;
+
+  
+}
+.partners a:hover{
+    transform: translateY(-10px);
+        transition: 0.3s;
+}
+.customers {
+    padding: 128px 0 !important;
+}
+    .box a {
+        color: black !important;
+        transition: 0.3s;
+     
+    }
+    .box a:hover{
+         background-color: black;
+            color: white !important;
+            transition: 0.3s;
+    }
+    .surat {
+        width: 154px;
+        height: 48px;
+    }
+    .box1,
+    .box {
+        border: none !important;
+    }
+    .box {
+        border: 0.625rem solid rgb(252, 252, 252) !important ;
+        border-radius: 15px;
+        margin-top: 0 !important;
+        padding: 48px 24px !important;
+    }
+
+.kubok {
+    padding: 96px 0;
+}
+    .koroce {
+        margin-left: 95px;
+    }
+    .songisi {
+        font-size: 38px;
+    }
+    .focus a {
+        transition: 0.3s;
+    }
+    .focus a:hover {
+        background-color: white !important;
+        color: black !important;
+        transition: 0.3s;
+    }
+
+.footer {
+    padding: 80px 0 48px 0 !important;
+    background-color: #242e4c;
+}
+    .xullas:hover .face {
+        color: #4267b2;
+transition: 0.3s;
+
+        }
+        .xullas:hover .insta{
+    color: #e1306c;
+
+        }
+        .xullas:hover .tg{
+    color: #1da1f2;
+
+        }
+  .xullas:hover .github{
+      color: yellow;
+  }
+    .xullas{
+transition: 0.3s;
+}
+    .xullas:hover{
+    
+transition: 0.3s;
+    }
+    .problem a:hover {
+        color: rgb(200, 17, 224) !important;
+    }
+    .footer-rasm {
+        width: 25px;
+        height: 30px;
+    }
+    .logo4 {
+        width: 35px;
+        height: 35px;
+        color: white !important;
+        background-color: transparent !important;
+    }
+   .footer a {
+        color: white !important;
+    }
+   .footer input {
+        border-radius: 10px !important;
+        outline: none !important;
+    }
+    .divlink {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    .divlink:hover{
+        width: 100px;
+            height: 40px;
+            background-color: white;
+            color: red;
+            border-radius: 30px;
+            transition: 0.3s;
+            margin-left: 20px;
+    }
+    
+        .bglink {
+            font-size: 45px;
+        }
+    
+    .takoy i {
+        color: black;
+    }
+    .takoy1 i {
+        color: black;
+    }
+
+.wrapper .button:hover .takoy i {
+    color: white;
+}
+.wrapper .button:hover .takoy1 i {
+    color: white;
+}
+.wrapper .button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+    width: 200px;
+}
+.wrapper .button .takoy {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .takoy {
+    background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .takoy {
+    background: #1da1f2;
+}
+.wrapper .button:nth-child(3):hover .takoy {
+    background: #e1306c;
+}
+
+.wrapper .button:nth-child(4):hover .takoy {
+    background: #ff0000;
+}
+.wrapper .button .takoy i {
+    font-size: 28px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+
+ 
+}
+.wrapper .button .takoy i:hover{
+    color: #fff;
+
+}
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+    color: #4267b2;
+}
+.wrapper .button:nth-child(2) span {
+    color: #1da1f2;
+}
+.wrapper .button:nth-child(3) span {
+    color: #e1306c;
+}
+.wrapper .button:nth-child(4) span {
+    color: #ff0000;
+}
+
+.wrapper .button .takoy1 {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .takoy1 {
+    background: red;
+}
+.wrapper .button:nth-child(2):hover .takoy1 {
+    background: green;
+}
+.wrapper .button:nth-child(3):hover .takoy1 {
+    background: black;
+}
+.wrapper .button .takoy1 i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  
+}
+.wrapper .button .takoy1 i:hover{
+    color: white;
+}
+.wrapper .button .yonaliw {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) .yonaliw {
+    color: red;
+}
+.wrapper .button:nth-child(2) .yonaliw {
+    color: green;
+}
+.wrapper .button:nth-child(3) .yonaliw {
+    color: black;
+}
