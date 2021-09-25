@@ -237,16 +237,8 @@ font-weight: bold;
 .customers {
     padding: 128px 0 !important;
 }
-    .box a {
-        color: black !important;
-        transition: 0.3s;
-     
-    }
-    .box a:hover{
-         background-color: black;
-            color: white !important;
-            transition: 0.3s;
-    }
+ 
+   
     .surat {
         width: 154px;
         height: 48px;
@@ -283,6 +275,9 @@ font-weight: bold;
 .footer {
     padding: 80px 0 48px 0 !important;
     background-color: #242e4c;
+}
+.xullas{
+    font-size: 30px;
 }
     .xullas:hover .face {
         color: #4267b2;
