@@ -18,6 +18,20 @@ ul {
 a:hover {
     text-decoration: none;
 }
+body.night {
+    background-color: rgb(26, 31, 49) !important;
+    color: white !important;
+    header {
+        background-color: rgb(161, 161, 167) !important;
+        color: black !important;
+    }
+    input {
+        background-color: rgb(23, 26, 39) !important;
+        color: white !important;
+    }
+   
+    }
+
 .featurla:hover{
     color: rgb(44, 37, 37);
 
@@ -30,7 +44,6 @@ a:hover {
 
 header {
     position: absolute;
-    // background-color: #242E4C !important;
     background-color: #242E4C !important;
 
     top: 0;
@@ -70,7 +83,7 @@ header {
     header li i {
         transition: 0.3s;
     }
-    header li:hover i {
+    header li:hover .icon {
         transform: rotateZ(-180deg);
     }
     .now {
@@ -94,9 +107,10 @@ header {
         left: -50%;
         transition: 0.3s;
         transform: translateY(-30px);
+    font-family: 'Source Code Pro', monospace;
 
         opacity: 0;
-        width: 600px;
+        width: 650px;
         visibility: hidden;
     }
         .inner-menu ul {
@@ -120,17 +134,46 @@ border-radius: 8px;
         .inner-menu h6 {
 font-weight: bold;        
         }
-    
-
-
-.mobile {
+.iphone{
+    position:fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    left: 30%;
+    color: white;
+        // z-index: 2;
+    padding: 20px !important;
+height: 100vh;
+    width: 350px;
+    background-color: #242e4c;
+    transform: translateX(-250px);
+}
+.nav-open .iphone{
+    transform: translateX(0);
+    box-shadow: 0 0 15px red;
+}
+.nav-open .impossible{
+   visibility: hidden;
+   opacity: 0;
+}
+.impossible{
     position: fixed;
     top: 0;
-    left: 10%;
-    width: 700px;
+    left: 0;
+    width: 100vw;
     height: 100vh;
-    padding: 20px;
-    background-color: white;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    // visibility: hidden;
+    // opacity: 0;
+}
+.mobile {
+    z-index: 2;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -279,8 +322,8 @@ font-weight: bold;
 .xullas{
     font-size: 30px;
 }
-    .xullas:hover .face {
-        color: #4267b2;
+    .xullas:hover .facebook {
+        color: #4267b2 !important;
 transition: 0.3s;
 
         }

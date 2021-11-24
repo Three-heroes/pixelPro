@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pixel Pro</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -19,9 +19,14 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   </head>
-  <body class="dark">
-    <header id="tugadi" data-aos="fade-right" data-aos-duration="2000">
+  <body class="" id="body">
+      
+    <header id="tugadi"  >
         <nav id="navbar-main" aria-label="Primary navigatio" class="navbar navbar-main navbar-expand-lg">
 
             <div class="container d-flex justify-content-between align-items-center">
@@ -33,9 +38,9 @@
                     <ul class="m-0 p-0 smth d-none d-lg-flex">
                         <li>
                             <a href="#" class="p-3 text-white">Pages <i class="fas fa-chevron-down icon"></i></a>
-                            <div class="inner-menu bg-white shadow px-0 py-2 p-lg-4">
-                                <div class="row" id="rowtwo">
-                                    <div class="col-6 col-lg-4">
+                            <div class="inner-menu bg-white shadow px-0 py-2 p-lg-4" id="king">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4" id="perfect">
                                         <div>
                                              <h6 class="d-block mb-3">Main Pages</h6>
                                         <ul class="mb-4">
@@ -238,20 +243,25 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="div" data-aos="fade-right" data-aos-duration="1500">
+
+                  
+
+                    <div class="div" >
                         <button class="btn btn-outline-warning mr-3 d-none d-lg-inline-block">
                             <i class="fas fa-book"></i> <span class="span"> Docs v5.4</span>
                         </button>
-                        <button class="btn btn-primary mr-3 d-inline-block  now">
+                        
+                        <button class="btn btn-primary mr-3 d-inline-block now" onclick="toggleMenu()">
                             <i class="fas fa-shopping-cart"></i> <span class="span">Buy Now</span>
                         </button>
-                       
-                        <button class="btn btn-light mr-3 d-lg-none d-inline-block" onclick="toggleMenu()">
+                      
+                        <button class="btn btn-light mr-3 d-lg-none bosiluchi">
                             <i class="fas fa-bars p-2 fs-5"></i>
                         </button>
               
                     </div>
-                            
+                         <div class="mobile">
+                         </div>   
                 </div>
                    
 
@@ -270,6 +280,8 @@
                         phones
                         all over the world.</p>
                     <p class="small m-0 p-0 fs-6">* Data charges may apply. Contact your provider for details.</p>
+                   
+                  
                     <div class="div2">
                         <a href="#" class="btn btn-light mb-xl-0 me-4">
                             <div class="d-flex">
@@ -301,7 +313,7 @@
 
 
                 </div>
-                <div class="col-lg-6 d-none d-md-flex">
+                <div class="col-lg-6 d-none d-lg-flex" >
                     <img src="app-landing.svg" alt="" class="w-100 mt-5 mt-lg-0 d-md-inline-block">
                 </div>
             </div>
@@ -314,7 +326,7 @@
             <div class="row mt-5">
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1500">
                     <div class="box bg-white share shadow p-5 mb-4 ">
-                        <h3>Share Moments that <br> Matter</h3>
+                        <h3>Share Moments that <br class="d-none d-xl-flex"> Matter</h3>
                         <p class="text-secondary">Send photos and videos instantly. You can even capture the moments
                             that matter to you most
                             with a built-in camera.</p>
@@ -597,7 +609,7 @@
                     <p>Pixel Pro is a premium Bootstrap 5 UI Kit that will <br> help you prototype and design beautiful,
                         creative <br> and modern websites.</p>
                     <div class="d-flex mb-sm-3">
-                        <a href="#" class="xullas"> <i class="fab fa-facebook fs-2 face"></i> </a>
+                        <a href="#" class="xullas"> <i class="fab fa-facebook fs-2 facebook"></i> </a>
                         <a href="#" class="xullas"> <i class="fab fa-instagram fs-2 ms-2 insta "></i> </a>
                         <a href="#" class="xullas"> <i class="fab fa-telegram  fs-2 ms-2 tg"></i> </a>
                         <a href="#" class="xullas"> <i class="fab fa-twitter fs-2 ms-2 tg "></i> </a>
@@ -640,7 +652,7 @@
                                     name="email" aria-label="Subscribe form" id="ExampleInput" required>
                             </div>
                             <div class="col-12 d-grid">
-                                <button class="btn mr-3 now">
+                                <button class="btn mr-3 now text-white">
                                     <i class="fas fa-shopping-cart"></i> <span class="span">Subscribe</span>
                                 </button>
                             </div>
@@ -674,23 +686,8 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -700,9 +697,9 @@
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
     <script src="/js/main.js"></script>
-<script src="/js/second.js"></script>
+    <script src="/js/header.js"></script>
 
 
     <script>

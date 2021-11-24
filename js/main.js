@@ -1,4 +1,5 @@
-const { useParams } = require("react-router");
+// const [sidebar, setSidebar] = useState(false);
+// const showSidebar = () => setSidebar(!sidebar);
 
 let ishShow = false;
 const menu = document.getElementById("menu");
@@ -11,14 +12,14 @@ const toggleMenu = () => {
   if (ishShow) {
     menu.classList.remove("d-none");
     menu.classList.add("mobile");
-    tugadi.classList.remove("d-none");
+    // body.classList.remove("d-none");
   } else {
     menu.classList.add("d-none");
     menu.classList.remove("mobile");
-    tugadi.classList.add("d-none");
+    // body.classList.add("d-none");
   }
 };
-
+toggleMenu();
 const row = document.getElementById("row");
 
 let data = [
@@ -95,59 +96,28 @@ setData();
 try {
   if (localStorage.getItem === "dark") $("html").addClass("dark");
   document.querySelector("html").classList.add("dark");
-} catch (error) {}
+} catch (error) {
+  alert("Tugadi");
+}
 
-const rowtwo = document.getElementById("rowtwo");
-let words = [
-  {
-    big: "Main Pages",
-    link2: "About",
-    link3: "Pricing",
-    link4: "Team",
-    link5: "Services",
-    link6: "Profile",
-    link7: "Contact",
-  },
-  {
-    big2: "Legal",
-    link8: "Legal Center",
-    link9: "Terms & agreement",
-  },
-  {
-    big3: "Career",
-    link10: "Careers",
-    link11: "Career Single",
-  },
-];
-const SetSecondData = () => {
-  rowtwo.innerHTML = "";
-  words.map((value, index) => {
-    const coltwo = document.createElement("div");
-    coltwo.className = `col-6 col-lg-4`;
-    coltwo.innerHTML = `
-    <div>
-    <h6 class="d-block mb-3">${value.big}</h6>
-<ul class="mb-4">
-   <li class="mb-2"><a href="#">${value.link2}</a></li>
-   <li class="mb-2"><a href="#">${value.link3}</a></li>
-   <li class="mb-2"><a href="#">${value.link4}</a></li>
-   <li class="mb-2"><a href="#">${value.link5}</a></li>
-   <li class="mb-2"><a href="#">${value.link6}</a></li>
-   <li class="mb-2"><a href="#">${value.link7}</a></li>
-</ul>
-<h6 class="d-block">${value.big2}</h6>
-<ul class="mb-4">
-   <li class="mb-2"><a href="#">${value.link8}</a></li>
-   <li class="mb-2"><a href="#">${value.link9}</a></li>
-</ul>
-<h6 class="d-block">${value.big3}</h6>
-<ul class="mb-4">
-   <li class="mb-2"><a href="#">${value.link10}</a></li>
-   <li class="mb-2"><a href="#">${value.link11}</a></li>
-</ul>
-</div>
-    `;
-    rowtwo.appendChild(coltwo);
-  });
+const body = document.getElementById("body");
+const switchInput = document.getElementById("switch");
+
+const changeMode = (status) => {
+  console.log(status);
+  if (status) {
+    body.classList.add("night");
+  } else {
+    body.classList.remove("night");
+  }
+  // if (checked) {
+  //   body.classList.add("night");
+  // } else {
+  //   body.classList.remove("night");
+  // }
+
+  localStorage.setItem("telegram-night", status);
+  switchInput.checked = status;
 };
-SetSecondData();
+
+changeMode(localStorage.getItem("telegram-night") == "true");
